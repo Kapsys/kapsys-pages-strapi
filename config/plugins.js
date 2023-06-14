@@ -1,17 +1,15 @@
 module.exports = ({ env }) => ({
     'users-permissions': {
       config: {
-      jwtSecret: env('JWT_SECRET'),
+        jwtSecret: env('JWT_SECRET'),
       },
     },
     graphql: {
       enabled: true,
       config: {
         endpoint: '/graphql',
-  
         defaultLimit: 25,
         maxLimit: 100,
-  
         apolloServer: {
           tracing: true,
         },
@@ -34,6 +32,23 @@ module.exports = ({ env }) => ({
           uploadStream: {},
           delete: {},
         },
+      },
+    },
+    seo: {
+      enabled: true
+    },
+    gatsby: {
+      enabled: true
+    },
+    navigation: {
+      enabled: true
+    },
+    sitemap: {
+      enabled: true,
+      config: {
+        autoGenerate: true,
+        allowedFields: [],
+        excludedTypes: [],
       },
     },
   });

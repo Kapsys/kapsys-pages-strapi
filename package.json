@@ -10,14 +10,19 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@relate-app/strapi-plugin-gatsby": "^1.0.6",
+    "@strapi/plugin-gatsby-preview": "^0.1.0",
     "@strapi/plugin-graphql": "4.11.1",
     "@strapi/plugin-i18n": "4.5.5",
+    "@strapi/plugin-seo": "^1.9.1",
     "@strapi/plugin-users-permissions": "4.5.5",
     "@strapi/provider-upload-aws-s3": "^4.11.1",
     "@strapi/strapi": "4.11.1",
     "better-sqlite3": "8.3.0",
     "pg": "8.8.0",
-    "sqlite3": "5.1.2"
+    "sqlite3": "5.1.2",
+    "strapi-plugin-navigation": "^2.2.11",
+    "strapi-plugin-sitemap": "^2.0.10"
   },
   "strapi": {
     "uuid": "35d7a084-3088-4d0b-869e-f503693ee8e5"
