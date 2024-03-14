@@ -19,10 +19,10 @@ function postgresConfig(env) {
       password: env('PGPASSWORD', 'password'),
       ssl: env.bool(true),
     },
-    pool: { min: 0 }
+    pool: { min: 0 },
   };
 }
 
 module.exports = ({ env }) => ({
-  connection: env('DB', 'postgres') === 'sqlite' ? sqliteConfig(env) : postgresConfig(env)
+  connection: env('DB', 'postgres') === 'sqlite' ? sqliteConfig(env) : postgresConfig(env),
 });

@@ -7,8 +7,8 @@ module.exports = [
         useDefaults: true,
         directives: {
           'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'kapsys.io-sandbox.s3.eu-central-1.amazonaws.com', 's3.eu-central-1.amazonaws.com'],
-          'media-src': ["'self'", 'data:', 'blob:', 'kapsys.io-sandbox.s3.eu-central-1.amazonaws.com', 's3.eu-central-1.amazonaws.com'],
+          'img-src': ["'self'", 'data:', 'blob:', 's3.eu-central-1.amazonaws.com'],
+          'media-src': ["'self'", 'data:', 'blob:', 's3.eu-central-1.amazonaws.com'],
           upgradeInsecureRequests: null,
         },
       },
